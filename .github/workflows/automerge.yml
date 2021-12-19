@@ -26,6 +26,9 @@ on:
 jobs:
   automerge:
     runs-on: ubuntu-latest
+    environment: 
+      name: Production
+      url: https://github.com/Potatismoose/Parkeringshuset/tree/main
     steps:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.14.3"
